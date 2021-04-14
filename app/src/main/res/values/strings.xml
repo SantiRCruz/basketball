@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="sumatoria1">Sumatoria de puntos</string>
+    <string name="equipo1">Equipo #1</string>
+    <string name="equipo2">Equipo #2</string>
+    <string name="incio_acumulador">0</string>
+    <string name="sumar1">+1</string>
+    <string name="sumar2">+2</string>
+    <string name="sumar3">+3</string>
+    <string name="suma">suma</string>
+    <string name="resta">Resta</string>
+    <string name="resta1">-1</string>
+    <string name="resta2">-2</string>
+    <string name="resta3">-3</string>
+    <string name="registro">Registro</string>
+    <string name="nombreEquipo">Nombre Del Equipo</string>
+</resources>

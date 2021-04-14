@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondobaloncesto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtAcumuladorEquipo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/incio_acumulador"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEquipo1" />
+
+    <TextView
+        android:id="@+id/txtEquipo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/equipo1"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEquipo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/equipo2"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/equipo2" />
+
+    <TextView
+        android:id="@+id/txtAcumuladorEquipo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:text="@string/incio_acumulador"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEquipo2" />
+
+    <Button
+        android:id="@+id/btnSumar2E1"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/sumar2"
+        app:layout_constraintStart_toStartOf="@+id/btnSumar1E1"
+        app:layout_constraintTop_toBottomOf="@+id/txtSumatoria" />
+
+    <Button
+        android:id="@+id/btnSumar3E1"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/sumar3"
+        app:layout_constraintStart_toEndOf="@+id/btnSumar2E1"
+        app:layout_constraintTop_toBottomOf="@+id/txtSumatoria" />
+
+    <Button
+        android:id="@+id/btnSumar1E1"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/sumar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSumatoria" />
+
+    <TextView
+        android:id="@+id/txtSumatoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/sumatoria1"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAcumuladorEquipo1" />
+
+    <Button
+        android:id="@+id/btnSumar1E2"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/sumar1"
+        app:layout_constraintEnd_toStartOf="@+id/btnSumar2E2"
+        app:layout_constraintTop_toBottomOf="@+id/txtSumatoria" />
+
+    <Button
+        android:id="@+id/btnSumar3E2"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/sumar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSumatoria" />
+
+    <Button
+        android:id="@+id/btnSumar2E2"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/sumar2"
+
+        app:layout_constraintEnd_toStartOf="@+id/btnSumar3E2"
+        app:layout_constraintTop_toBottomOf="@+id/txtSumatoria" />
+
+    <Switch
+        android:id="@+id/CambioProceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/suma"
+        android:textColor="@color/colorWhite"
+        android:textOff="@string/suma"
+        android:textOn="@string/resta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="@string/suma" />
+</androidx.constraintlayout.widget.ConstraintLayout>
